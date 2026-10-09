@@ -1,0 +1,45 @@
+:root {
+  --sky: #9fcdfb;
+  --ink: #2b3a4a;
+  --muted: #8a9bad;
+  --cloud: #ffffff;
+  --cloud-shade: #dce8f5;
+  --line: #ffffff;
+  --grass: #5fa53b;
+  --grass-dark: #3f7a24;
+  --gold: #ffd83d;
+
+  --pixel-font: 'Press Start 2P', monospace;
+  --text-font: 'VT323', monospace;
+
+  /* esquinas "pixeladas" escalonadas */
+  --px-clip: polygon(0 12px, 6px 12px, 6px 6px, 12px 6px, 12px 0, calc(100% - 12px) 0, calc(100% - 12px) 6px,
+      calc(100% - 6px) 6px, calc(100% - 6px) 12px, 100% 12px, 100% calc(100% - 12px), calc(100% - 6px) calc(100% - 12px),
+      calc(100% - 6px) calc(100% - 6px), calc(100% - 12px) calc(100% - 6px), calc(100% - 12px) 100%, 12px 100%,
+      12px calc(100% - 6px), 6px calc(100% - 6px), 6px calc(100% - 12px), 0 calc(100% - 12px));
+  --px-clip-sm: polygon(0 6px, 6px 6px, 6px 0, calc(100% - 6px) 0, calc(100% - 6px) 6px, 100% 6px, 100% 100%, 0 100%);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--sky);
+  color: var(--ink);
+  font-family: var(--text-font);
+  -webkit-font-smoothing: none;
+}
+
+button,
+input {
+  font: inherit;
+}
